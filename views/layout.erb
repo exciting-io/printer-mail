@@ -1,0 +1,44 @@
+<html>
+<head>
+<link rel="stylesheet" href="http://wee-printer.gofreerange.com/stylesheets/print.css" type="text/css" media="screen" title="no title" charset="utf-8">
+<style>
+input, textarea {
+  width: 100%;
+  font-size: 24px;
+}
+textarea {
+  height: 200px;
+}
+
+.message {
+  font-family: "Arial Rounded Mt", "Arial", sans-serif;
+}
+
+.message header {
+  border-top: 2px solid black;
+  border-bottom: 1px solid black;
+  font-size: 14px;
+  padding: 5px 0;
+  margin-bottom: 20px;
+}
+
+.message header .label {
+  width: 50px;
+  display: block;
+  float: left;
+}
+
+.message .body {
+  font-weight: 900;
+  font-size: 24px;
+}
+</style>
+</head>
+<body class="preview">
+  <div class="paper">
+    <div class="content">
+      <%= yield %>
+    </div>
+  </div>
+</body>
+</html>

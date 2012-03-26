@@ -1,0 +1,8 @@
+<section class="message">
+  <header>
+    <div class="from"><span class="label">From:</span> <%= @message.from %></div>
+    <div class="hour"><span class="label">At:</span> <%= @message.sent_at.strftime("%l:%M%P") %></div>
+    <div class="date"><span class="label">On:</span> <%= @message.sent_at.strftime("%A %e %B") %></div>
+  </header>
+  <div class="body"><%= @message.body.gsub("\n", "<br/>") %></div>
+</section>
