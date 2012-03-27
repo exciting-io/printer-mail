@@ -4,7 +4,7 @@ require "sinatra"
 require "data_mapper"
 require "net/http"
 
-DataMapper::setup(:default, "sqlite3://#{Dir.pwd}/wee-mail.db")
+DataMapper::setup(:default, ENV['DATABASE_URL'] || 'postgres://localhost/wee-mail')
 
 class Printer
   include DataMapper::Resource
@@ -35,7 +35,7 @@ Message.auto_upgrade!
 
 helpers do
   def send_message(printer, message_attributes)
-    message = printer.messages.create(message_attributes)
+    message = printer.messages.create!(message_attributes)
     printer_url = URI.parse(printer.url)
     message_url = url("/messages/#{message.id}")
     Net::HTTP.post_form(printer_url, url: message_url)
@@ -53,7 +53,7 @@ get "/register" do
 end
 
 post "/register" do
-  @printer = Printer.create(params[:printer])
+  @printer = Printer.create!(params[:printer])
   erb :registered
 end
 
