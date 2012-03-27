@@ -1,1 +1,1 @@
-web: bundle exec unicorn -p $PORT
+web: bundle exec rackup -p $PORT
