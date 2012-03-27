@@ -9,7 +9,7 @@ DataMapper::setup(:default, ENV['SHARED_DATABASE_URL'] || 'postgres://localhost/
 class Printer
   include DataMapper::Resource
   property :id, Serial
-  property :url, String
+  property :url, Text
   property :nickname, String
 
   has n, :messages
