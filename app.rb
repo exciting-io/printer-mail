@@ -4,7 +4,7 @@ require "sinatra"
 require "data_mapper"
 require "net/http"
 
-DataMapper::setup(:default, ENV['SHARED_DATABASE_URL'] || 'postgres://localhost/wee-mail')
+DataMapper::setup(:default, ENV['SHARED_DATABASE_URL'] || 'postgres://localhost/printer-mail')
 
 class Printer
   include DataMapper::Resource
