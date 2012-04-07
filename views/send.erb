@@ -1,8 +1,12 @@
 <form action="" method="post">
+  <label>To:
+    <input type="text" disabled value="<%= params[:nickname] %>" />
+  </label>
+  <br>
   <label for="message_from">From: 
     <input type="text" name="message[from]" />
   </label>
-  </br>
+  <br>
   <label for="message_body">Message: 
     <textarea name="message[body]"></textarea>
   </label>
