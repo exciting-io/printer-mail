@@ -3,8 +3,12 @@ Printer Mail
 
 A very simple message application demonstrating how to work with the [Printer API][api].
 
+[Find out more about printers][project page].
+
 Getting started
 ---------------
+
+This application expects to run on Ruby 1.9.2 or greater.
 
 First, install all the dependencies:
 
@@ -37,5 +41,6 @@ Well, the idea is that printers don't all need to be connected to a single centr
 
 Similarly, many difference publishers can be used to send content to a single printer. This demonstration "message" service isn't tied to any single backend, and you can run your own instance of this publisher yourself too if you like.
 
+[project page]: http://gofreerange.com/printer
 [backend]: https://github.com/freerange/printer
 [api]: https://github.com/freerange/printer/wiki/API
