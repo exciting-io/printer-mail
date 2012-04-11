@@ -15,7 +15,7 @@ First, install all the dependencies:
     $ bundle install
     $ bundle exec foreman start
 
-To use this, a printer owner must visit http://localhost:4545/register (or whatever host the application is deployed to). On that page, they should enter a nickname, and the URL endpoint for their printer. For example, the nickname could be `lazyatom`, and the printer URL may be something like http://printer.gofreerange.com/print/1b6c9ad3e1a4d1d34e86f2b550e3a97f.
+To use this, a printer owner must visit http://localhost:4545/register (or whatever host the application is deployed to). On that page, they should enter a nickname, and the URL endpoint for their printer. For example, the nickname could be `lazyatom`, and the printer URL may be something like `http://printer.backend.server/print/abcd1234efgh5678`.
 
 Then, they can share the url http://localhost:4545/send/lazyatom (or whatever the nickname was) with their friends.
 
