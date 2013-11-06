@@ -29,7 +29,7 @@ The Printer ecosystem works by content sources (like this app) sending URLs to a
 
 In this case, when a message is created, a URL of the form `http://localhost:4545/messages/:id` is sent to the backend when a message is created.
 
-This page is styled using the [default `print` stylesheet](http://printer.gofreerange.com/stylesheets/print.css) from http://printer.gofreerange.com, which helps ensure that the layout will work well on the fixed, small width of the printer (384px).
+This page is styled using the [default `print` stylesheet](http://printer.exciting.io/stylesheets/print.css) from http://printer.exciting.io, which helps ensure that the layout will work well on the fixed, small width of the printer (384px).
 
 
 More background
@@ -37,10 +37,10 @@ More background
 
 Why do I have to enter a printer URL?
 
-Well, the idea is that printers don't all need to be connected to a single central backend server. You can run your own Printer backend server for yourself, or for you and your friends. Or you could run your own backend server behind your firewall. Or you can use a hosted one, like the original server at http://printer.gofreerange.com. It's up to you.
+Well, the idea is that printers don't all need to be connected to a single central backend server. You can run your own Printer backend server for yourself, or for you and your friends. Or you could run your own backend server behind your firewall. Or you can use a hosted one, like the original server at http://printer.exciting.io. It's up to you.
 
 Similarly, many different publishers can be used to send content to a single printer. This demonstration "message" service isn't tied to any single backend, and you can run your own instance of this publisher yourself too if you like.
 
-[project page]: http://gofreerange.com/printer
-[backend]: https://github.com/freerange/printer
-[api]: https://github.com/freerange/printer/wiki/API
+[project page]: http://exciting.io/printer
+[backend]: https://github.com/exciting_io/printer
+[api]: https://github.com/exciting-io/printer/wiki/API
